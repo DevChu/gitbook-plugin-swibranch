@@ -1,26 +1,26 @@
 {
-  "name": "gitbook-plugin-swibranch",
-  "description": "Plugin for GitBook to switch branches",
+  "name": "gitbook-plugin-zkdocument",
+  "description": "Gitbook plugin for ZK Documents",
   "main": "index.js",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "engines": {
     "gitbook": "*"
   },
   "dependencies": {},
-  "homepage": "https://github.com/chunfuchang",
+  "homepage": "http://www.zkoss.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chunfuchang/gitbook-plugin-swibranch.git"
+    "url": "http://gitlab.potix.com/jameschu/zk-gitbook-plugin-document.git"
   },
   "license": "Apache 2",
   "bugs": {
-    "url": "https://github.com/chunfuchang/gitbook-plugin-swibranch/issues"
+    "url": "http://gitlab.potix.com:3000/jameschu/zk-gitbook-plugin-document/issues"
   },
-  "readme": "GitBook Plugin for Switch Git Branch\n==============\n\n## Please DO NOT download this plugin\n## It's for ZK internal usage only!!!!!!!!\n\n",
+  "readme": "Gitbook plugin for ZK Documents",
   "readmeFilename": "README.md",
   "gitHead": "c2e26aed822971ebf85261fba465e6729706f992",
-  "_id": "gitbook-plugin-swibranch@0.0.8",
+  "_id": "gitbook-plugin-zkdocument@1.0.0",
   "scripts": {},
   "_shasum": "4157116958c028544bfedd40f974218ff1ca6000",
-  "_from": "gitbook-plugin-swibranch@*"
+  "_from": "gitbook-plugin-zkdocument@*"
 }
