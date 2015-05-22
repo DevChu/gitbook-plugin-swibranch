@@ -1,20 +1,26 @@
 var exec = require('child_process').execSync;
+var headerDOM;
 var switchBranchDOM;
 module.exports = {
 	// Extend ebook resources and html
 	book: {
 		assets: "./book",
-		js: ["plugin.js"],
+		js: ["./plugin.js", "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "./header/js/bootstrap.min.js", "./header/js/bootstrap-hover-dropdown.min.js"],
+		css: [
+			"https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,600", "./header/css/bootstrap.min.css", "./header/css/style.css"
+		],
 		html: {
 			"html:start": function() {
-				return "<!-- Start book " + this.options.title + " -->"
+				return "<!-- Start book " + this.options.title + " -->";
 			},
 			"html:end": function() {
 				return "<!-- End of book " + this.options.title + " -->"
 			},
 			"head:start": "<!-- head:start -->",
 			"head:end": "<!-- head:end -->",
-			"body:start": "<!-- body:start -->",
+			"body:start": function() {
+				return "<!-- body:start -->" + headerDOM;
+			},
 			"body:end": "<!-- body:end -->"
 		}
 	},
@@ -50,15 +56,18 @@ module.exports = {
 				'<div class="buttons">' + buttons + '</div>' + '</div>' + '</div>';
 
 			switchBranchDOM = dropdown + invisible_div;
+
+			//get header file
+			var fs = require('fs');
+			headerDOM = '<div id="zk-document-header">' + fs.readFileSync(__dirname + '/book/header/header.html') + '</div>';
 		},
 		// This is called after the book generation
 		"finish": function() {},
-
-		page: function(page) {
+		"page": function(page) {
 			page.sections.filter(function(section) {
 				return section.type == 'normal';
 			}).forEach(function(section) {
-				section.content = '<div id="book-header"></div>' + switchBranchDOM + section.content;
+				section.content = switchBranchDOM + section.content;
 			});
 			return page;
 		}

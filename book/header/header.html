@@ -1,189 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Load font family - Open Sans -->
-		<link rel="stylesheet" type="text/css" href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,600">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Custom styling -->
-	<link rel="stylesheet" href="css/style.css">
-	<title>
-		
-	</title>
-</head>
-		
-<body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">
-					<img src="images/zk-logo.svg" alt="ZK Logo">
-				</a>
-			</div>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<a class="navbar-brand" href="http://www.zkoss.org/">
+				<div></div>
+			</a>
+		</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="http://www.zkoss.org/product/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Products</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="http://www.zkoss.org/product/zk" title="ZK">ZK Framework</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkspreadsheet" title="ZK Spreadsheet">ZK Spreadsheet</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkcharts" title="ZK Charts">ZK Charts</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkpivottable" title="ZK Pivottable">ZK Pivottable</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkstudio" title="ZK Studio">ZK Studio</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkcalendar" title="ZK Calendar">ZK Calendar</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkspring" title="ZK Spring">ZK Spring</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zkjsp" title="ZK JSP">ZK JSP</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/product/zats" title="ZATS">ZATS Test</a></li>
+					</ul>
+				</li>
 
-					<li class="dropdown">
-						<a href="http://www.zkoss.org/product/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Products</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://www.zkoss.org/product/zk" title="ZK">ZK Framework</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkspreadsheet" title="ZK Spreadsheet">ZK Spreadsheet</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkcharts" title="ZK Charts">ZK Charts</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkpivottable" title="ZK Pivottable">ZK Pivottable</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkstudio" title="ZK Studio">ZK Studio</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkcalendar" title="ZK Calendar">ZK Calendar</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkspring" title="ZK Spring">ZK Spring</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zkjsp" title="ZK JSP">ZK JSP</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/product/zats" title="ZATS">ZATS Test</a></li>
-						</ul>
-					</li>
+				 <li class="dropdown">
+					<a href="http://www.zkoss.org/demo/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Demos</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="http://www.zkoss.org/zkdemo/">ZK Framework</a></li>
+						<li class="divider"></li>
+						<li><a href="http://zssdemo.zkoss.org">ZK SpreadSheet</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/zkdemo/application/pivottable">ZK Pivottable</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/zkchartsdemo" title="ZK Charts">ZK Charts</a></li>
+						<li class="divider"></li>
+						<li><a href="http://zcal.zkoss.org">ZK Calendar</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/zkmail/">ZK Web Mail</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/zksandbox">ZK Sandbox</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/demo/external">Real World Apps</a></li>
+					</ul>
+				</li>
 
-					 <li class="dropdown">
-						<a href="http://www.zkoss.org/demo/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Demos</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://www.zkoss.org/zkdemo/">ZK Framework</a></li>
-							<li class="divider"></li>
-							<li><a href="http://zssdemo.zkoss.org">ZK SpreadSheet</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/zkdemo/application/pivottable">ZK Pivottable</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/zkchartsdemo" title="ZK Charts">ZK Charts</a></li>
-							<li class="divider"></li>
-							<li><a href="http://zcal.zkoss.org">ZK Calendar</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/zkmail/">ZK Web Mail</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/zksandbox">ZK Sandbox</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/demo/external">Real World Apps</a></li>
-						</ul>
-					</li>
+				 <li class="dropdown">
+					<a href="http://www.zkoss.org/download/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Downloads</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="http://www.zkoss.org/download/zk">ZK Framework</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkspreadsheet">ZK Spreadsheet</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkcharts" title="ZK Charts">ZK Charts</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkpivottable">ZK Pivottable</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkstudio">ZK Studio</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkcalendar">ZK Calendar</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkspring">ZK Spring</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zkjsp">ZK JSP</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/download/zats">ZATS Test</a></li>
+					</ul>
+				</li>
 
-					 <li class="dropdown">
-						<a href="http://www.zkoss.org/download/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Downloads</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://www.zkoss.org/download/zk">ZK Framework</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkspreadsheet">ZK Spreadsheet</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkcharts" title="ZK Charts">ZK Charts</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkpivottable">ZK Pivottable</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkstudio">ZK Studio</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkcalendar">ZK Calendar</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkspring">ZK Spring</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zkjsp">ZK JSP</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/download/zats">ZATS Test</a></li>
-						</ul>
-					</li>
+				 <li class="dropdown">
+					<a href="http://www.zkoss.org/whyzk/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Why ZK</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="http://www.zkoss.org/whyzk/TopReasons">Top Reasons</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/whyzk/features">Features</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/whyzk/zkee">Why ZK EE</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/whyzk/WhosUsing">Who's Using</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/whyzk/casestudies">Case Studies</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/whyzk/Testimonials">Testimonials</a></li>
+					</ul>
+				</li>
 
-					 <li class="dropdown">
-						<a href="http://www.zkoss.org/whyzk/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Why ZK</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://www.zkoss.org/whyzk/TopReasons">Top Reasons</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/whyzk/features">Features</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/whyzk/zkee">Why ZK EE</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/whyzk/WhosUsing">Who's Using</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/whyzk/casestudies">Case Studies</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/whyzk/Testimonials">Testimonials</a></li>
-						</ul>
-					</li>
+		<li class="dropdown">
+					<a href="http://www.zkoss.org/community/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Community</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="http://www.zkoss.org/forum/">Forum</a></li>
+						<li class="divider"></li>
+						<li><a href="http://blog.zkoss.org">Blog</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/community/board">Board</a></li>
+						<li class="divider"></li>
+						<li><a href='http://tracker.zkoss.org/secure/IssueNavigator.jspa?mode=hide&requestId=10002'>Request Features</a></li>
+						<li class="divider"></li>
+						<li><a href='http://tracker.zkoss.org/secure/IssueNavigator.jspa?mode=hide&requestId=10001'>Report Bugs</a></li>
+					</ul>
+				</li>
 
-			<li class="dropdown">
-						<a href="http://www.zkoss.org/community/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Community</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://www.zkoss.org/forum/">Forum</a></li>
-							<li class="divider"></li>
-							<li><a href="http://blog.zkoss.org">Blog</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/community/board">Board</a></li>
-							<li class="divider"></li>
-							<li><a href='http://tracker.zkoss.org/secure/IssueNavigator.jspa?mode=hide&requestId=10002'>Request Features</a></li>
-							<li class="divider"></li>
-							<li><a href='http://tracker.zkoss.org/secure/IssueNavigator.jspa?mode=hide&requestId=10001'>Report Bugs</a></li>
-						</ul>
-					</li>
+				 <li class="dropdown">
+					<a href="http://www.zkoss.org/documentation" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Documentation</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="http://www.zkoss.org/documentation">ZK Framework</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkspreadsheet">ZK Spreadsheet</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkcharts" title="ZK Charts">ZK Charts</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkpivottable">ZK Pivottable</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkstudio">ZK Studio</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkcalendar">ZK Calendar</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkspring">ZK Spring</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zkjsp">ZK JSP</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.zkoss.org/documentation/zats">ZATS Test</a></li>
+					</ul>
+				</li>
 
-					 <li class="dropdown">
-						<a href="http://www.zkoss.org/documentation" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Documentation</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://www.zkoss.org/documentation">ZK Framework</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkspreadsheet">ZK Spreadsheet</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkcharts" title="ZK Charts">ZK Charts</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkpivottable">ZK Pivottable</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkstudio">ZK Studio</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkcalendar">ZK Calendar</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkspring">ZK Spring</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zkjsp">ZK JSP</a></li>
-							<li class="divider"></li>
-							<li><a href="http://www.zkoss.org/documentation/zats">ZATS Test</a></li>
-						</ul>
-					</li>
-
-					 <li class="dropdown">
-						<a href="http://www.zkoss.org/support/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Support</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="/support">Support</a></li>
-							<li class="divider"></li>
-							<li><a href="/support/training">Training</a></li>
-							<li class="divider"></li>
-							<li><a href="/license">License</a></li>
-							<li class="divider"></li>
-							<li><a href="/partner">Partners</a></li>
-							<li class="divider"></li>
-							<li><a href="/support/about">About Us</a></li>
-							<li class="divider"></li>
-							<li><a href="/support/about/contact">Contact Us</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-hover-dropdown.min.js"></script>
-	
-</body>
-
-</html>
+				 <li class="dropdown">
+					<a href="http://www.zkoss.org/support/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Support</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="/support">Support</a></li>
+						<li class="divider"></li>
+						<li><a href="/support/training">Training</a></li>
+						<li class="divider"></li>
+						<li><a href="/license">License</a></li>
+						<li class="divider"></li>
+						<li><a href="/partner">Partners</a></li>
+						<li class="divider"></li>
+						<li><a href="/support/about">About Us</a></li>
+						<li class="divider"></li>
+						<li><a href="/support/about/contact">Contact Us</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar -->
+	</div><!-- /.container-fluid -->
+</nav>
