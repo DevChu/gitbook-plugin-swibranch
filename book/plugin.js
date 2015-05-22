@@ -46,12 +46,12 @@ require(["gitbook"], function(gitbook) {
 		});
 		$(window).scrollTop(0);
 		$('div.book-summary > .summary > li:last').remove();
+		$('div.book').height(b - h);
 	});
 
 	gitbook.events.bind("start", function() {
 		$('.navbar .dropdown > a').click(function(){
             location.href = this.href;
         });
-        $('div.book').height(b - h);
 	});
 });
