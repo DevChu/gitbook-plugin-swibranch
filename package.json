@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-zkdocument",
   "description": "Gitbook plugin for ZK Documents",
   "main": "index.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "gitbook": "*"
   },
