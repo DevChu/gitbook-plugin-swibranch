@@ -34,6 +34,9 @@ require(["gitbook"], function(gitbook) {
 			}
 		});
 	};
+
+	var h = $('#zk-document-header').height();
+	var b = $('div.book').height();
 	gitbook.events.bind("page.change", function() {
 		tweakButton();
 		$('#zk-swibranch-btn').insertAfter('#font-settings-wrapper');
@@ -41,14 +44,14 @@ require(["gitbook"], function(gitbook) {
 		$('.book-search input').attr({
 			"placeholder" : "Search this book"
 		});
+		$(window).scrollTop(0);
+		$('div.book-summary > .summary > li:last').remove();
 	});
 
 	gitbook.events.bind("start", function() {
 		$('.navbar .dropdown > a').click(function(){
             location.href = this.href;
         });
-        var s = $('div.book-summary > .summary');
-        if (s.scrollTop() == 0)
-        	$(window).scrollTop(0);
+        $('div.book').height(b - h);
 	});
 });
