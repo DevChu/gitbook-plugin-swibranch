@@ -43,8 +43,9 @@ body {
 /* ZK logo area */
 .navbar-brand {
 	background-color: #0c8cb5;
-	height: 53px;
+	height: 54px;
 	width: 67px;
+	margin-top: -1px;
  }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
 	background-color: #0c8cb5;
@@ -57,7 +58,7 @@ body {
 	width: 100%;
 }
 .navbar > .container-fluid .navbar-brand {
-	margin-left: 0px;
+	margin-left: -1px;
 }
 
 /* Submenu dropdown stlying */
