@@ -36,7 +36,7 @@ require(["gitbook"], function(gitbook) {
 	};
 
 	var h = $('#zk-document-header').height();
-	var b = $('div.book').height();
+	var b = $('body').height();
 	gitbook.events.bind("page.change", function() {
 		tweakButton();
 		$('#zk-swibranch-btn').insertAfter('#font-settings-wrapper');
@@ -52,6 +52,10 @@ require(["gitbook"], function(gitbook) {
 	gitbook.events.bind("start", function() {
 		$('.navbar .dropdown > a').click(function(){
             location.href = this.href;
+        });
+        $(window).resize(function() {
+        	b = $('body').height();
+        	$('div.book').height(b - h);
         });
 	});
 });
