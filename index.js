@@ -5,7 +5,8 @@ module.exports = {
 	// Extend ebook resources and html
 	book: {
 		assets: "./book",
-		js: ["./plugin.js", "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "./header/js/bootstrap.min.js", "./header/js/bootstrap-hover-dropdown.min.js"],
+		js: ["./plugin.js", "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", 
+		"./header/js/bootstrap.min.js", "./header/js/bootstrap-hover-dropdown.min.js", "./browsercheck.js"],
 		css: [
 			"https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,600", "./header/css/bootstrap.min.css", "./header/css/style.css"
 		],
